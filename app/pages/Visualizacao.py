@@ -71,8 +71,8 @@ var_price = st.sidebar.radio(
     "Variação de Preço",
     [0.1, 0.5, 1, 5, 10])
 
-image_url = "./src/images/bitcoin2.jpeg"
-st.sidebar.image(image_url, use_column_width=True)
+#image_url = "./src/images/bitcoin2.jpeg"
+#st.sidebar.image(image_url, use_column_width=True)
 
 # Dividir os dados em ordens de compra e venda
 orderbook_compra = orderbook.loc[orderbook['compra_venda'] == 'compra'].sort_values(by=['preco', 'empresa'], ascending=False).reset_index(drop=True)
